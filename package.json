@@ -1,0 +1,17 @@
+{
+  "name": "stock-price-aggregator",
+  "version": "1.0.0",
+  "description": "Application for stock price aggregation and correlation analysis",
+  "scripts": {
+    "start-backend": "cd backend(que1) && npm run start",
+    "start-frontend": "cd frontend(que2) && npm start",
+    "start": "concurrently \"npm run start-backend\" \"npm run start-frontend\"",
+    "install-all": "npm install && cd backend(que1) && npm install && cd ../frontend(que2) && npm install"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+} 
